@@ -130,7 +130,7 @@
   <project path="external/emma" name="platform/external/emma" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/esd" name="platform/external/esd" groups="pdk-cw-fs,pdk-fs" />
 
-  <project path="external/exfat" name="CyanogenMod/android_external_exfat" remote="github" revision="staging/cm-14.0" groups="pdk" />
+  <project path="external/exfat" name="CyanogenMod/android_external_exfat" remote="github" revision="cm-14.0" groups="pdk" />
 
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
   <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fs,pdk-fs" />
@@ -144,7 +144,7 @@
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/gemmlowp" name="platform/external/gemmlowp" />
 
-  <project path="external/fuse" name="CyanogenMod/android_external_fuse" remote="github" revision="staging/cm-14.0" groups="pdk" />
+  <project path="external/fuse" name="CyanogenMod/android_external_fuse" remote="github" revision="cm-14.0" groups="pdk" />
 
   <project path="external/giflib" name="platform/external/giflib" groups="pdk,qcom_msm8x26" />
   <project path="external/glide" name="platform/external/glide" groups="pdk-fs" />
@@ -259,7 +259,7 @@
   <project path="external/nist-sip" name="platform/external/nist-sip" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/noto-fonts" name="platform/external/noto-fonts" groups="pdk" />
 
-   <project path="external/ntfs-3g" name="CyanogenMod/android_external_ntfs-3g" remote="github" revision="staging/cm-14.0" groups="pdk" />
+   <project path="external/ntfs-3g" name="CyanogenMod/android_external_ntfs-3g" remote="github" revision="cm-14.0" groups="pdk" />
 
   <project path="external/oauth" name="platform/external/oauth" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/objenesis" name="platform/external/objenesis" groups="pdk-cw-fs,pdk-fs" />
@@ -543,7 +543,7 @@
   <project path="system/update_engine" name="platform/system/update_engine" />
 
   <project path=".org/system/vold" name="platform/system/vold" groups="pdk" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" revision="staging/cm-14.0" groups="pdk" />
+  <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" revision="cm-14.0" groups="pdk" />
 
   <project path="system/weaved" name="platform/system/weaved" />
   <project path="system/webservd" name="platform/system/webservd" />
