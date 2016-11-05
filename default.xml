@@ -27,8 +27,8 @@
   </project>
 
   <project path=".org/android" name="platform/manifest" groups="pdk" />
-  <!-- Github branch should stay marshmallow-release regardless of aosp branch for this project -->
-  <project path="android" name="Schischu/android_chagall_klimt" remote="github" revision="nougat-release" groups="pdk" >
+  <!-- Github branch should stay nougat-release regardless of aosp branch for this project -->
+  <project path="android" name="alexmaloteaux/android_chagall_klimt" remote="github" revision="nougat-release" groups="pdk" >
     <copyfile src="build.sh" dest="build.sh" />
   </project>
 
@@ -381,7 +381,7 @@
   <project path="hardware/akm" name="platform/hardware/akm" />
 
   <project path=".org/hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
-  <project path="hardware/broadcom/libbt" name="Schischu/aosp_android_hardware_broadcom_libbt" groups="pdk" remote="github" />
+  <project path="hardware/broadcom/libbt" name="alexmaloteaux/aosp_android_hardware_broadcom_libbt" groups="pdk" remote="github" />
 
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
@@ -543,7 +543,7 @@
   <project path="system/update_engine" name="platform/system/update_engine" />
 
   <project path=".org/system/vold" name="platform/system/vold" groups="pdk" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" revision="cm-14.0" groups="pdk" />
+  <project path="system/vold" name="alexmaloteaux/android_system_vold" remote="github" revision="cm-14.0" groups="pdk" />
 
   <project path="system/weaved" name="platform/system/weaved" />
   <project path="system/webservd" name="platform/system/webservd" />
