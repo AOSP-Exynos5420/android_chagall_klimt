@@ -1,6 +1,6 @@
 # Getting sources
 
-repo init -u https://github.com/Schischu/android_chagall_klimt.git -b marshmallow-release
+repo init -u https://github.com/[USER NAME]/android_chagall_klimt.git -b nougat-release
 
 repo sync
 
