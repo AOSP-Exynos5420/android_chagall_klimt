@@ -13,40 +13,6 @@
            remote="aosp"
            sync-c="true"
            sync-j="4" />
-
-
-  <!-- Github branch should stay nougat-release regardless of aosp branch for this project -->
-  <project path="android" name="alexmaloteaux/android_chagall_klimt" remote="github" revision="nougat-release" groups="pdk" >
-    <copyfile src="build.sh" dest="build.sh" />
-  </project>
-
-
-<!--
-
-MAIN DEVICE REPOS
-#################
-
--->
-
-  <project path="kernel/samsung/chagalllte" name="alexmaloteaux/android_kernel_samsung_chagalllte" remote="github" revision="cm-12.1" groups="kernel,chagall_klimt" />
-
-  <!-- Github branch should stay aosp-7.0 regardless of aosp branch for these projects -->
-  <project path="device/samsung/chagall-klimt-common" name="alexmaloteaux/android_device_samsung_chagall_klimt_common" remote="github" revision="aosp-7.0" groups="device,chagall_klimt,broadcom_pdk" />
-  <project path="device/samsung/chagalllte" name="alexmaloteaux/android_device_samsung_chagalllte" remote="github" revision="aosp-7.0" groups="device,chagalllte,broadcom_pdk" />
-		<project path="device/samsung/chagallwifi" name="alexmaloteaux/android_device_samsung_chagallwifi" remote="github" revision="aosp-7.0" groups="device,chagallwifi,broadcom_pdk" />
-  <project path="device/samsung/klimtwifi" name="alexmaloteaux/android_device_samsung_klimtwifi" remote="github" revision="aosp-7.0" groups="device,klimtwifi,broadcom_pdk" />
-  <project path="device/samsung/klimtlte" name="alexmaloteaux/android_device_samsung_klimtlte" remote="github" revision="aosp-7.0" groups="device,klimtlte,broadcom_pdk" />
-
-  <project path="vendor/samsung/chagall-klimt-common" name="alexmaloteaux/android_vendor_samsung_chagall_klimt_common" remote="github" revision="nougat-release" />
-  <project path="vendor/samsung/chagall-common" name="alexmaloteaux/android_vendor_samsung_chagall_common" remote="github" revision="nougat-release" />
-  <project path="vendor/samsung/chagalllte" name="alexmaloteaux/android_vendor_samsung_chagalllte" remote="github" revision="nougat-release" />
-		<project path="vendor/samsung/chagallwifi" name="alexmaloteaux/android_vendor_samsung_chagallwifi" remote="github" revision="nougat-release" />
-  <project path="vendor/samsung/klimt-common" name="alexmaloteaux/android_vendor_samsung_klimt_common" remote="github" revision="nougat-release" />
-  <project path="vendor/samsung/klimtwifi" name="alexmaloteaux/android_vendor_samsung_klimtwifi" remote="github" revision="nougat-release" />
-  <project path="vendor/samsung/klimtlte" name="alexmaloteaux/android_vendor_samsung_klimtlte" remote="github" revision="nougat-release" />
-
-		<project path="vendor/google" name="alexmaloteaux/android_vendor_google" remote="github" revision="aosp-7.0" />
-
 <!--
 
 FORKED REPOS
@@ -54,6 +20,8 @@ FORKED REPOS
 
 -->
 
+		<!--kernel-->
+		<project path="kernel/samsung/chagalllte" name="alexmaloteaux/android_kernel_samsung_chagalllte" remote="github" revision="cm-12.1" groups="kernel,chagall_klimt" />
 		<!--aosp-->
   <project path="build" name="alexmaloteaux/aosp_android_build" remote="github" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -78,9 +46,39 @@ FORKED REPOS
   <project path="hardware/samsung_slsi/exynos5420" name="alexmaloteaux/android_hardware_samsung_slsi_exynos5420" remote="github" revision="nougat-release" groups="pdk" />
   <project path="hardware/samsung_slsi/openmax" name="alexmaloteaux/android_hardware_samsung_slsi_openmax" remote="github" revision="nougat-release" groups="pdk" />
   <project path="system/vold" name="alexmaloteaux/android_system_vold" remote="github" revision="cm-14.0" groups="pdk" />
+   <project path="device/samsung/chagalllte" name="alexmaloteaux/android_device_samsung_chagalllte" remote="github" revision="aosp-7.0" groups="device,chagalllte,broadcom_pdk" />
+		<project path="device/samsung/chagallwifi" name="alexmaloteaux/android_device_samsung_chagallwifi" remote="github" revision="aosp-7.0" groups="device,chagallwifi,broadcom_pdk" />
+  <project path="device/samsung/klimtwifi" name="alexmaloteaux/android_device_samsung_klimtwifi" remote="github" revision="aosp-7.0" groups="device,klimtwifi,broadcom_pdk" />
+  <project path="device/samsung/klimtlte" name="alexmaloteaux/android_device_samsung_klimtlte" remote="github" revision="aosp-7.0" groups="device,klimtlte,broadcom_pdk" />
   <!--omni-->
 		<project path="packages/apps/OpenDelta" name="alexmaloteaux/android_packages_apps_OpenDelta" remote="github" revision="android-6.0" groups="pdk-fs" />
+ 
+ 
+<!--
+
+SCHISCHU SPECIFIC REPOS
+########################
+
+-->
+
+  <project path="device/samsung/chagall-klimt-common" name="alexmaloteaux/android_device_samsung_chagall_klimt_common" remote="github" revision="aosp-7.0" groups="device,chagall_klimt,broadcom_pdk" />
+  <project path="vendor/samsung/chagall-klimt-common" name="alexmaloteaux/android_vendor_samsung_chagall_klimt_common" remote="github" revision="nougat-release" />
+  <project path="vendor/google" name="alexmaloteaux/android_vendor_google" remote="github" revision="aosp-7.0" />
+
+<!--
+
+BLOBS  REPOS
+############
+
+-->
+  <project path="vendor/samsung/chagall-common" name="alexmaloteaux/android_vendor_samsung_chagall_common" remote="github" revision="nougat-release" />
+  <project path="vendor/samsung/chagalllte" name="alexmaloteaux/android_vendor_samsung_chagalllte" remote="github" revision="nougat-release" />
+		<project path="vendor/samsung/chagallwifi" name="alexmaloteaux/android_vendor_samsung_chagallwifi" remote="github" revision="nougat-release" />
+  <project path="vendor/samsung/klimt-common" name="alexmaloteaux/android_vendor_samsung_klimt_common" remote="github" revision="nougat-release" />
+  <project path="vendor/samsung/klimtwifi" name="alexmaloteaux/android_vendor_samsung_klimtwifi" remote="github" revision="nougat-release" />
+  <project path="vendor/samsung/klimtlte" name="alexmaloteaux/android_vendor_samsung_klimtlte" remote="github" revision="nougat-release" />
   
+
 <!--
 
 CM BASED REPOS
@@ -531,44 +529,14 @@ AOSP BASED REPOS
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
    
-
 <!--
 
-SOME UNUSED ORIGINAL REPOS (USED BY SCHISCHU TO EASE DEV)
-##########################################################
+Misc
 
 -->
-  
-  <!--
 
-  git clone https://android.googlesource.com/platform/platform/manifest aosp_manifest
-  
-  git clone https://android.googlesource.com/platform/build aosp_build
-  git clone https://android.googlesource.com/platform/external/boringssl aosp_external_boringssl
-  git clone https://android.googlesource.com/platform/external/e2fsprogs aosp_external_e2fsprogs
-  git clone https://android.googlesource.com/platform/frameworks/av aosp_frameworks_av
-  git clone https://android.googlesource.com/platform/frameworks/base aosp_frameworks_base
-  git clone https://android.googlesource.com/platform/frameworks/native aosp_frameworks_native
-  git clone https://android.googlesource.com/platform/frameworks/opt/net/wifi aosp_frameworks_opt_net_wifi
-  git clone https://android.googlesource.com/platform/frameworks/opt/telephony aosp_frameworks_opt_telephony
-  git clone https://android.googlesource.com/platform/hardware/broadcom/libbt aosp_hardware_broadcom_libbt
-  git clone https://android.googlesource.com/platform/hardware/libhardware aosp_harware_libhardware
-  git clone https://android.googlesource.com/platform/hardware/ril aosp_hardware_ril
-  git clone https://android.googlesource.com/platform/packages/apps/Settings.git aosp_packages_Settings
-  git clone https://android.googlesource.com/platform/system/core aosp_system_core
-  git clone https://android.googlesource.com/platform/system/sepolicy cm_system_sepolicy
-   
-  
-  
-  git clone https://github.com/CyanogenMod/android_hardware_samsung.git cm_hardware_samsung
-  git clone https://github.com/CyanogenMod/android_hardware_samsung_slsi-cm_exynos  cm_hardware_samsung_slsi-cm_exynos
-  git clone https://github.com/CyanogenMod/android_hardware_samsung_slsi_exynos5-insignal cm_hardware_samsung_slsi_exynos5-insignal
-  git clone https://github.com/CyanogenMod/android_hardware_samsung_slsi_exynos5420 cm_hardware_samsung_slsi_exynos5420
-  git clone https://github.com/CyanogenMod/android_hardware_samsung_slsi-cm_openmax cm_hardware_samsung_slsi-cm_openmax
-  git clone https://github.com/CyanogenMod/android_system_vold cm_system_vold
-  
-  git clone https://github.com/omnirom/android_packages_apps_OpenDelta omni_packages_apps_OpenDelta
-
-		-->
+  <project path="android" name="alexmaloteaux/android_chagall_klimt" remote="github" revision="nougat-release" groups="pdk" >
+    <copyfile src="tools/build.sh" dest="build.sh" />
+  </project>
 
 </manifest>
