@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Perso source file for android dev
+
 ################################################################
 #VARS : 
 
@@ -8,7 +10,7 @@ LOCAL_JAVA_PATH="/usr/lib/jvm/java-8-openjdk"
 #product : chagalllte chagallwifi klimtlte klimtwifi
 PRODUCT=chagalllte
 #type : eng  | user | userdebug
-PRODUCT_TYPE=eng 
+PRODUCT_TYPE=userdebug
 CCACHE_SIZE=25G
 
 ################################################################
@@ -16,6 +18,7 @@ CCACHE_SIZE=25G
 msg_err(){
 	echo -e '\E[40;31m'"\033[1m${1}\033[0m"
 }
+
 
 sourcing() {
 	export PATH=${BASE_PATH}/bin:${LOCAL_JAVA_PATH}/bin:$PATH
@@ -56,14 +59,26 @@ sourcing() {
 	fi	
 }
 
+
 #zsh lead to issue
+EXIT=0
 if [ "$(echo $0)" != "bash" ] && [ "$(echo $0)" != "/bin/bash" ]; then
 	echo "!!!Only BASH is supported!!!"
-	return
+	EXIT=1
 fi
+#compat with zsh
+if [ $EXIT == 1 ]; then exit; fi
+
+if [[ ! $_ != $0 ]]
+then
+	msg_err "This script should be sourced from a working dev environment , not called as a subshell"
+	EXIT=1
+fi
+if [ $EXIT == 1 ]; then exit; fi
 
 BIN_PATH="$( dirname ${BASH_SOURCE[0]} )"
-if [ ! $BIN_PATH == */bin ] && [ ! $BIN_PATH == bin ]; then
+
+if [ ! "$BIN_PATH" =~ "(.)*/bin" ]; then
 	msg_err "!!!The source script should be located in a bin directory"
 	return
 fi

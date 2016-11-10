@@ -535,8 +535,6 @@ Misc
 
 -->
 
-  <project path="android" name="alexmaloteaux/android_chagall_klimt" remote="github" revision="nougat-release" groups="pdk" >
-    <copyfile src="tools/build.sh" dest="build.sh" />
-  </project>
+  <project path="android" name="alexmaloteaux/android_chagall_klimt" remote="github" revision="nougat-release" groups="pdk" />
 
 </manifest>
