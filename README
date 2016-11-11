@@ -1,12 +1,15 @@
 # Getting sources
+##################
 
-#Check tools/init_aosp_7_chagall_klimt.sh to setup compil env
+#copy tools/init.sh to source folder
+source init.sh
 repo init -u https://github.com/[USER NAME]/android_chagall_klimt.git -b nougat-release
 repo sync
 
 # Building sources
-#Check tools/build.sh to compil all roms
-hmm 
-make otapackage
-...
+###################
+
+#copy tools/build_all.sh to source folder
+source build_all.sh
+
 
