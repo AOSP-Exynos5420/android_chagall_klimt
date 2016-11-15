@@ -20,13 +20,15 @@ FORKED REPOS
 
 -->
 
-		<!--kernel-->
-		<project path="kernel/samsung/chagalllte" name="alexmaloteaux/android_kernel_samsung_chagalllte" remote="github" revision="cm-12.1" groups="kernel,chagall_klimt" />
-		<!--aosp-->
+  <!--kernel-->
+  <project path="kernel/samsung/chagalllte" name="alexmaloteaux/android_kernel_samsung_chagalllte" remote="github" revision="cm-12.1" groups="kernel,chagall_klimt" />
+  <!--aosp-->
   <project path="build" name="alexmaloteaux/aosp_android_build" remote="github" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="external/boringssl" name="alexmaloteaux/aosp_android_external_boringssl" remote="github" groups="pdk" />
+  <!--custom fork for gpsd compat-->
+  <project path="external/boringssl_oldapi" name="alexmaloteaux/aosp_android_external_boringssl" remote="github" revision="nougat-oldapi" groups="pdk" />
   <project path="external/e2fsprogs" name="alexmaloteaux/aosp_android_external_e2fsprogs" remote="github" groups="pdk" />
   <project path="frameworks/av" name="alexmaloteaux/aosp_android_frameworks_av" remote="github" groups="pdk" />
   <project path="frameworks/base" name="alexmaloteaux/aosp_android_frameworks_base" remote="github" groups="pdk-cw-fs,pdk-fs" />
@@ -47,11 +49,11 @@ FORKED REPOS
   <project path="hardware/samsung_slsi/openmax" name="alexmaloteaux/android_hardware_samsung_slsi_openmax" remote="github" revision="nougat-release" groups="pdk" />
   <project path="system/vold" name="alexmaloteaux/android_system_vold" remote="github" revision="cm-14.0" groups="pdk" />
    <project path="device/samsung/chagalllte" name="alexmaloteaux/android_device_samsung_chagalllte" remote="github" revision="aosp-7.0" groups="device,chagalllte,broadcom_pdk" />
-		<project path="device/samsung/chagallwifi" name="alexmaloteaux/android_device_samsung_chagallwifi" remote="github" revision="aosp-7.0" groups="device,chagallwifi,broadcom_pdk" />
+  <project path="device/samsung/chagallwifi" name="alexmaloteaux/android_device_samsung_chagallwifi" remote="github" revision="aosp-7.0" groups="device,chagallwifi,broadcom_pdk" />
   <project path="device/samsung/klimtwifi" name="alexmaloteaux/android_device_samsung_klimtwifi" remote="github" revision="aosp-7.0" groups="device,klimtwifi,broadcom_pdk" />
   <project path="device/samsung/klimtlte" name="alexmaloteaux/android_device_samsung_klimtlte" remote="github" revision="aosp-7.0" groups="device,klimtlte,broadcom_pdk" />
   <!--omni-->
-		<project path="packages/apps/OpenDelta" name="alexmaloteaux/android_packages_apps_OpenDelta" remote="github" revision="android-6.0" groups="pdk-fs" />
+  <project path="packages/apps/OpenDelta" name="alexmaloteaux/android_packages_apps_OpenDelta" remote="github" revision="android-6.0" groups="pdk-fs" />
  
  
 <!--
@@ -73,7 +75,7 @@ BLOBS  REPOS
 -->
   <project path="vendor/samsung/chagall-common" name="alexmaloteaux/android_vendor_samsung_chagall_common" remote="github" revision="nougat-release" />
   <project path="vendor/samsung/chagalllte" name="alexmaloteaux/android_vendor_samsung_chagalllte" remote="github" revision="nougat-release" />
-		<project path="vendor/samsung/chagallwifi" name="alexmaloteaux/android_vendor_samsung_chagallwifi" remote="github" revision="nougat-release" />
+  <project path="vendor/samsung/chagallwifi" name="alexmaloteaux/android_vendor_samsung_chagallwifi" remote="github" revision="nougat-release" />
   <project path="vendor/samsung/klimt-common" name="alexmaloteaux/android_vendor_samsung_klimt_common" remote="github" revision="nougat-release" />
   <project path="vendor/samsung/klimtwifi" name="alexmaloteaux/android_vendor_samsung_klimtwifi" remote="github" revision="nougat-release" />
   <project path="vendor/samsung/klimtlte" name="alexmaloteaux/android_vendor_samsung_klimtlte" remote="github" revision="nougat-release" />
@@ -114,7 +116,7 @@ AOSP BASED REPOS
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/google/dragon" name="device/google/dragon" groups="device,dragon" />
-		<project path="device/sample" name="device/sample" groups="pdk" />
+  <project path="device/sample" name="device/sample" groups="pdk" />
 		
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/adt-infra" name="platform/external/adt-infra" groups="adt-infra,notdefault" />
