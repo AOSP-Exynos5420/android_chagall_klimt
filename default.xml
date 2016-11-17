@@ -53,7 +53,9 @@ FORKED REPOS
   <project path="device/samsung/klimtwifi" name="alexmaloteaux/android_device_samsung_klimtwifi" remote="github" revision="aosp-7.0" groups="device,klimtwifi,broadcom_pdk" />
   <project path="device/samsung/klimtlte" name="alexmaloteaux/android_device_samsung_klimtlte" remote="github" revision="aosp-7.0" groups="device,klimtlte,broadcom_pdk" />
   <!--omni-->
+  <!--disable opendelta (OTA)
   <project path="packages/apps/OpenDelta" name="alexmaloteaux/android_packages_apps_OpenDelta" remote="github" revision="android-6.0" groups="pdk-fs" />
+  -->
  
  
 <!--
