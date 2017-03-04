@@ -44,7 +44,7 @@ FORKED REPOS
   <!--cm-->
   <project path="hardware/samsung" name="alexmaloteaux/android_hardware_samsung" remote="github" revision="nougat-release" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos" name="alexmaloteaux/android_hardware_samsung_slsi_exynos" remote="github" revision="nougat-release" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos5-insignal" name="alexmaloteaux/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="nougat-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5-insignal" name="AOSP-Exynos5420/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="n7.1" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5420" name="alexmaloteaux/android_hardware_samsung_slsi_exynos5420" remote="github" revision="nougat-release" groups="pdk" />
   <project path="hardware/samsung_slsi/openmax" name="alexmaloteaux/android_hardware_samsung_slsi_openmax" remote="github" revision="nougat-release" groups="pdk" />
   <project path="system/vold" name="alexmaloteaux/android_system_vold" remote="github" revision="cm-14.0" groups="pdk" />
