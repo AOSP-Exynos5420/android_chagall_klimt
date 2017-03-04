@@ -3,7 +3,7 @@
 
 #copy tools/init.sh to source folder
 source init.sh
-repo init -u https://github.com/[USER NAME]/android_chagall_klimt.git -b nougat-release
+repo init -u https://github.com/AOSP-Exynos5420/android_chagall_klimt.git -b n7.1
 repo sync
 
 # Building sources
