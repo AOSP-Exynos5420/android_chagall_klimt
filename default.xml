@@ -34,15 +34,15 @@ FORKED REPOS
   <project path="frameworks/base" name="AOSP-Exynos5420/aosp_android_frameworks_base" remote="github" revision="n7.1" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/native" name="AOSP-Exynos5420/aosp_android_frameworks_native" remote="github" revision="n7.1" groups="pdk"  />
   <project path="frameworks/opt/net/wifi" name="alexmaloteaux/aosp_android_frameworks_opt_net_wifi" remote="github" groups="pdk" />
-  <project path="frameworks/opt/telephony" name="alexmaloteaux/aosp_android_frameworks_opt_telephony" remote="github" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="AOSP-Exynos5420/aosp_android_frameworks_opt_telephony" remote="github" revision="n7.1" groups="pdk" />
   <project path="hardware/broadcom/libbt" name="alexmaloteaux/aosp_android_hardware_broadcom_libbt" groups="pdk" remote="github" />
   <project path="hardware/libhardware" name="alexmaloteaux/aosp_android_hardware_libhardware" remote="github" groups="pdk" />  
-  <project path="hardware/ril" name="alexmaloteaux/aosp_android_hardware_ril" remote="github" groups="pdk" />
+  <project path="hardware/ril" name="AOSP-Exynos5420/aosp_android_hardware_ril" remote="github" revision="n7.1" groups="pdk" />
   <project path="packages/apps/Settings" name="alexmaloteaux/aosp_android_packages_apps_Settings" remote="github" groups="pdk-fs" />
   <project path="system/core" name="alexmaloteaux/aosp_android_system_core" remote="github" groups="pdk" />
   <project path="system/sepolicy" name="AOSP-Exynos5420/aosp_android_system_sepolicy" remote="github" revision="n7.1" groups="pdk" />
   <!--cm-->
-  <project path="hardware/samsung" name="alexmaloteaux/android_hardware_samsung" remote="github" revision="nougat-release" groups="pdk" />
+  <project path="hardware/samsung" name="AOSP-Exynos5420/android_hardware_samsung" remote="github" revision="n7.1" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos" name="alexmaloteaux/android_hardware_samsung_slsi_exynos" remote="github" revision="nougat-release" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5-insignal" name="AOSP-Exynos5420/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="n7.1" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5420" name="alexmaloteaux/android_hardware_samsung_slsi_exynos5420" remote="github" revision="nougat-release" groups="pdk" />
