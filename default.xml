@@ -44,6 +44,7 @@ FORKED REPOS
   <project path="system/core" name="AOSP-Exynos5420/aosp_android_system_core" remote="github" revision="n7.1" groups="pdk" />
   <project path="system/sepolicy" name="AOSP-Exynos5420/aosp_android_system_sepolicy" remote="github" revision="n7.1" groups="pdk" />
   <project path="hardware/samsung" name="AOSP-Exynos5420/android_hardware_samsung" remote="github" revision="n7.1" groups="pdk" />
+  <project path="bionic" name="AOSP-Exynos5420/android_bionic" remote="github" revision="n7.1" groups="pdk" />
 
   <!--Alex's Repos-->
   <project path="hardware/broadcom/libbt" name="alexmaloteaux/aosp_android_hardware_broadcom_libbt" groups="pdk" remote="github" />
@@ -88,7 +89,6 @@ AOSP BASED REPOS
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="development" name="platform/development" groups="pdk-cw-fs,pdk-fs" />
