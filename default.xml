@@ -39,7 +39,7 @@ FORKED REPOS
   <project path="hardware/libhardware" name="alexmaloteaux/aosp_android_hardware_libhardware" remote="github" groups="pdk" />  
   <project path="hardware/ril" name="AOSP-Exynos5420/aosp_android_hardware_ril" remote="github" revision="n7.1" groups="pdk" />
   <project path="packages/apps/Settings" name="alexmaloteaux/aosp_android_packages_apps_Settings" remote="github" groups="pdk-fs" />
-  <project path="system/core" name="alexmaloteaux/aosp_android_system_core" remote="github" groups="pdk" />
+  <project path="system/core" name="AOSP-Exynos5420/aosp_android_system_core" remote="github" revision="n7.1" groups="pdk" />
   <project path="system/sepolicy" name="AOSP-Exynos5420/aosp_android_system_sepolicy" remote="github" revision="n7.1" groups="pdk" />
   <!--cm-->
   <project path="hardware/samsung" name="AOSP-Exynos5420/android_hardware_samsung" remote="github" revision="n7.1" groups="pdk" />
