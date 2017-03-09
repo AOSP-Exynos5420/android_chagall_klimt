@@ -7,7 +7,7 @@
   
   <remote  name="github"
            fetch="https://github.com/" 
-           revision="refs/heads/android-7.0.0_r19"/>
+           revision="refs/heads/n7.1"/>
   
   <default revision="refs/tags/android-7.0.0_r19"
            remote="aosp"
@@ -21,49 +21,47 @@ FORKED REPOS
 -->
 
   <!--Device Trees-->
-  <project path="device/samsung/chagallltetmo" name="AOSP-Exynos5420/android_device_samsung_chagallltetmo" remote="github" revision="n7.1" groups="device,chagalllte,broadcom_pdk" />
-  <project path="device/samsung/chagall-klimt-common" name="AOSP-Exynos5420/android_device_samsung_chagall_klimt_common" remote="github" revision="n7.1" groups="device,chagall_klimt,broadcom_pdk" />
+  <project path="device/samsung/chagallltetmo" name="AOSP-Exynos5420/android_device_samsung_chagallltetmo" remote="github" groups="device,chagalllte,broadcom_pdk" />
+  <project path="device/samsung/chagall-klimt-common" name="AOSP-Exynos5420/android_device_samsung_chagall_klimt_common" remote="github" groups="device,chagall_klimt,broadcom_pdk" />
 
   <!--Vendor Trees-->
-  <project path="vendor/samsung/chagall-klimt-common" name="AOSP-Exynos5420/android_vendor_samsung_chagall_klimt_common" remote="github" revision="n7.1" />
-  <project path="vendor/samsung/chagall-common" name="AOSP-Exynos5420/android_vendor_samsung_chagall_common" remote="github" revision="n7.1" />
-  <project path="vendor/samsung/chagallltetmo" name="AOSP-Exynos5420/android_vendor_samsung_chagallltetmo" remote="github" revision="n7.1" />
+  <project path="vendor/samsung/chagall-klimt-common" name="AOSP-Exynos5420/android_vendor_samsung_chagall_klimt_common" remote="github" />
+  <project path="vendor/samsung/chagall-common" name="AOSP-Exynos5420/android_vendor_samsung_chagall_common" remote="github" />
+  <project path="vendor/samsung/chagallltetmo" name="AOSP-Exynos5420/android_vendor_samsung_chagallltetmo" remote="github" />
 
   <!--Kernel-->
-  <project path="kernel/samsung/chagalllte" name="AOSP-Exynos5420/android_kernel_samsung_chagalllte" remote="github" revision="n7.1" groups="kernel,chagall_klimt" />
+  <project path="kernel/samsung/chagalllte" name="AOSP-Exynos5420/android_kernel_samsung_chagalllte" remote="github" groups="kernel,chagall_klimt" />
 
   <!--My Repos-->
-  <project path="build" name="AOSP-Exynos5420/aosp_android_build" remote="github" revision="n7.1" groups="pdk,tradefed" >
+  <project path="bionic" name="AOSP-Exynos5420/aosp_android_bionic" remote="github" groups="pdk" />
+  <project path="build" name="AOSP-Exynos5420/aosp_android_build" remote="github" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="frameworks/av" name="AOSP-Exynos5420/aosp_android_frameworks_av" remote="github" revision="n7.1" groups="pdk" />
-  <project path="frameworks/base" name="AOSP-Exynos5420/aosp_android_frameworks_base" remote="github" revision="n7.1" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="AOSP-Exynos5420/aosp_android_frameworks_native" remote="github" revision="n7.1" groups="pdk"  />
-  <project path="frameworks/opt/telephony" name="AOSP-Exynos5420/aosp_android_frameworks_opt_telephony" remote="github" revision="n7.1" groups="pdk" />
-  <project path="hardware/ril" name="AOSP-Exynos5420/aosp_android_hardware_ril" remote="github" revision="n7.1" groups="pdk" />
-  <project path="system/core" name="AOSP-Exynos5420/aosp_android_system_core" remote="github" revision="n7.1" groups="pdk" />
-  <project path="system/sepolicy" name="AOSP-Exynos5420/aosp_android_system_sepolicy" remote="github" revision="n7.1" groups="pdk" />
-  <project path="hardware/samsung" name="AOSP-Exynos5420/android_hardware_samsung" remote="github" revision="n7.1" groups="pdk" />
-  <project path="bionic" name="AOSP-Exynos5420/aosp_android_bionic" remote="github" revision="n7.1" groups="pdk" />
-  <project path="frameworks/opt/net/wifi" name="AOSP-Exynos5420/aosp_android_frameworks_opt_net_wifi" remote="github" revision="n7.1" groups="pdk" />
-  <project path="hardware/libhardware" name="AOSP-Exynos5420/aosp_android_hardware_libhardware" remote="github" revision="n7.1" groups="pdk" />  
-  <project path="hardware/broadcom/libbt" name="AOSP-Exynos5420/aosp_android_hardware_broadcom_libbt" groups="pdk" revision="n7.1" remote="github" />
-  <project path="packages/apps/Settings" name="AOSP-Exynos5420/aosp_android_packages_apps_Settings" remote="github" revision="n7.1" groups="pdk-fs" />
-
-  <!--Alex's Repos-->
-  <project path="hardware/samsung_slsi/exynos" name="alexmaloteaux/android_hardware_samsung_slsi_exynos" remote="github" revision="nougat-release" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos5-insignal" name="AOSP-Exynos5420/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="n7.1" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos5420" name="alexmaloteaux/android_hardware_samsung_slsi_exynos5420" remote="github" revision="nougat-release" groups="pdk" />
-  <project path="hardware/samsung_slsi/openmax" name="alexmaloteaux/android_hardware_samsung_slsi_openmax" remote="github" revision="nougat-release" groups="pdk" />
-  <project path="vendor/google" name="alexmaloteaux/android_vendor_google" remote="github" revision="aosp-7.0" />
+  <project path="frameworks/av" name="AOSP-Exynos5420/aosp_android_frameworks_av" remote="github" groups="pdk" />
+  <project path="frameworks/base" name="AOSP-Exynos5420/aosp_android_frameworks_base" remote="github" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/native" name="AOSP-Exynos5420/aosp_android_frameworks_native" remote="github" groups="pdk"  />
+  <project path="frameworks/opt/net/wifi" name="AOSP-Exynos5420/aosp_android_frameworks_opt_net_wifi" remote="github" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="AOSP-Exynos5420/aosp_android_frameworks_opt_telephony" remote="github" groups="pdk" />
+  <project path="hardware/ril" name="AOSP-Exynos5420/aosp_android_hardware_ril" remote="github" groups="pdk" />
+  <project path="hardware/broadcom/libbt" name="AOSP-Exynos5420/aosp_android_hardware_broadcom_libbt" groups="pdk" remote="github" />
+  <project path="hardware/libhardware" name="AOSP-Exynos5420/aosp_android_hardware_libhardware" remote="github" groups="pdk" />  
+  <project path="hardware/samsung" name="AOSP-Exynos5420/android_hardware_samsung" remote="github" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos" name="AOSP-Exynos5420/android_hardware_samsung_slsi_exynos" remote="github" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5-insignal" name="AOSP-Exynos5420/android_hardware_samsung_slsi_exynos5-insignal" remote="github" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5420" name="AOSP-Exynos5420/android_hardware_samsung_slsi_exynos5420" remote="github" groups="pdk" />
+  <project path="hardware/samsung_slsi/openmax" name="AOSP-Exynos5420/android_hardware_samsung_slsi_openmax" remote="github" groups="pdk" />
+  <project path="packages/apps/Settings" name="AOSP-Exynos5420/aosp_android_packages_apps_Settings" remote="github" groups="pdk-fs" />
+  <project path="system/core" name="AOSP-Exynos5420/aosp_android_system_core" remote="github" groups="pdk" />
+  <project path="system/sepolicy" name="AOSP-Exynos5420/aosp_android_system_sepolicy" remote="github" groups="pdk" />
+  <project path="system/vold" name="AOSP-Exynos5420/android_system_vold" remote="github" groups="pdk" />
+  <project path="vendor/google" name="AOSP-Exynos5420/android_vendor_google" remote="github" />
 
 <!--
-LINEAGE BASED REPOS
+LineageOS BASED REPOS
 ###############
 
 -->
 
-  <project path="system/vold" name="LineageOS/android_system_vold" remote="github" revision="cm-14.0" groups="pdk" />
   <project path="external/e2fsprogs" name="LineageOS/android_external_e2fsprogs" remote="github" revision="cm-14.0" groups="pdk" />
   <project path="external/exfat" name="LineageOS/android_external_exfat" remote="github" revision="cm-14.0" groups="pdk" />
   <project path="external/fuse" name="LineageOS/android_external_fuse" remote="github" revision="cm-14.0" groups="pdk" />
@@ -109,8 +107,8 @@ AOSP BASED REPOS
   <project path="external/avahi" name="platform/external/avahi" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/boringssl" name="platform/external/boringssl" groups="pdk" />
+  <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/c-ares" name="platform/external/c-ares" />
