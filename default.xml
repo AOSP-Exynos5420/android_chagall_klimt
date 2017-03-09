@@ -64,7 +64,7 @@ LINEAGE BASED REPOS
 -->
 
   <project path="system/vold" name="LineageOS/android_system_vold" remote="github" revision="cm-14.0" groups="pdk" />
-  <project path="external/e2fsprogs" name="LineageOS/aosp_android_external_e2fsprogs" remote="github" revision="cm-14.0" groups="pdk" />
+  <project path="external/e2fsprogs" name="LineageOS/android_external_e2fsprogs" remote="github" revision="cm-14.0" groups="pdk" />
   <project path="external/exfat" name="LineageOS/android_external_exfat" remote="github" revision="cm-14.0" groups="pdk" />
   <project path="external/fuse" name="LineageOS/android_external_fuse" remote="github" revision="cm-14.0" groups="pdk" />
   <project path="external/ntfs-3g" name="LineageOS/android_external_ntfs-3g" remote="github" revision="cm-14.0" groups="pdk" />
