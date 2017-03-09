@@ -45,24 +45,17 @@ FORKED REPOS
   <project path="system/sepolicy" name="AOSP-Exynos5420/aosp_android_system_sepolicy" remote="github" revision="n7.1" groups="pdk" />
   <project path="hardware/samsung" name="AOSP-Exynos5420/android_hardware_samsung" remote="github" revision="n7.1" groups="pdk" />
   <project path="bionic" name="AOSP-Exynos5420/aosp_android_bionic" remote="github" revision="n7.1" groups="pdk" />
+  <project path="frameworks/opt/net/wifi" name="AOSP-Exynos5420/aosp_android_frameworks_opt_net_wifi" remote="github" revision="n7.1" groups="pdk" />
+  <project path="hardware/libhardware" name="AOSP-Exynos5420/aosp_android_hardware_libhardware" remote="github" revision="n7.1" groups="pdk" />  
+  <project path="hardware/broadcom/libbt" name="AOSP-Exynos5420/aosp_android_hardware_broadcom_libbt" groups="pdk" revision="n7.1" remote="github" />
+  <project path="packages/apps/Settings" name="AOSP-Exynos5420/aosp_android_packages_apps_Settings" remote="github" revision="n7.1" groups="pdk-fs" />
 
   <!--Alex's Repos-->
-  <project path="hardware/broadcom/libbt" name="alexmaloteaux/aosp_android_hardware_broadcom_libbt" groups="pdk" remote="github" />
-  <project path="hardware/libhardware" name="alexmaloteaux/aosp_android_hardware_libhardware" remote="github" groups="pdk" />  
-  <project path="packages/apps/Settings" name="alexmaloteaux/aosp_android_packages_apps_Settings" remote="github" groups="pdk-fs" />
   <project path="hardware/samsung_slsi/exynos" name="alexmaloteaux/android_hardware_samsung_slsi_exynos" remote="github" revision="nougat-release" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5-insignal" name="AOSP-Exynos5420/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="n7.1" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5420" name="alexmaloteaux/android_hardware_samsung_slsi_exynos5420" remote="github" revision="nougat-release" groups="pdk" />
   <project path="hardware/samsung_slsi/openmax" name="alexmaloteaux/android_hardware_samsung_slsi_openmax" remote="github" revision="nougat-release" groups="pdk" />
-  <project path="system/vold" name="alexmaloteaux/android_system_vold" remote="github" revision="cm-14.0" groups="pdk" />
-  <project path="frameworks/opt/net/wifi" name="alexmaloteaux/aosp_android_frameworks_opt_net_wifi" remote="github" groups="pdk" />
-  <project path="external/e2fsprogs" name="alexmaloteaux/aosp_android_external_e2fsprogs" remote="github" groups="pdk" />
-  <project path="external/boringssl" name="alexmaloteaux/aosp_android_external_boringssl" remote="github" groups="pdk" />
-  <!--custom fork for gpsd compat-->
-  <project path="external/boringssl_oldapi" name="alexmaloteaux/aosp_android_external_boringssl" remote="github" revision="nougat-oldapi" groups="pdk" />
   <project path="vendor/google" name="alexmaloteaux/android_vendor_google" remote="github" revision="aosp-7.0" />
-
-
 
 <!--
 LINEAGE BASED REPOS
@@ -70,6 +63,8 @@ LINEAGE BASED REPOS
 
 -->
 
+  <project path="system/vold" name="LineageOS/android_system_vold" remote="github" revision="cm-14.0" groups="pdk" />
+  <project path="external/e2fsprogs" name="LineageOS/aosp_android_external_e2fsprogs" remote="github" revision="cm-14.0" groups="pdk" />
   <project path="external/exfat" name="LineageOS/android_external_exfat" remote="github" revision="cm-14.0" groups="pdk" />
   <project path="external/fuse" name="LineageOS/android_external_fuse" remote="github" revision="cm-14.0" groups="pdk" />
   <project path="external/ntfs-3g" name="LineageOS/android_external_ntfs-3g" remote="github" revision="cm-14.0" groups="pdk" />
