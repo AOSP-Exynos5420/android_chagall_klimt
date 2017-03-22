@@ -47,7 +47,6 @@ FORKED REPOS
   <project path="frameworks/opt/telephony" name="AOSP-Exynos5420/aosp_android_frameworks_opt_telephony" remote="github" groups="pdk" />
   <project path="hardware/ril" name="AOSP-Exynos5420/aosp_android_hardware_ril" remote="github" groups="pdk" />
   <project path="hardware/broadcom/libbt" name="AOSP-Exynos5420/aosp_android_hardware_broadcom_libbt" groups="pdk" remote="github" />
-  <project path="hardware/libhardware" name="AOSP-Exynos5420/aosp_android_hardware_libhardware" remote="github" groups="pdk" />  
   <project path="hardware/samsung" name="AOSP-Exynos5420/android_hardware_samsung" remote="github" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos" name="AOSP-Exynos5420/android_hardware_samsung_slsi_exynos" remote="github" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5-insignal" name="AOSP-Exynos5420/android_hardware_samsung_slsi_exynos5-insignal" remote="github" groups="pdk" />
@@ -374,6 +373,7 @@ AOSP BASED REPOS
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
+  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
