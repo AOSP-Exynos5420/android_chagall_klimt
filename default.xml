@@ -32,6 +32,7 @@ FORKED REPOS
   <project path="vendor/samsung/chagallltetmo" name="AOSP-Exynos5420/android_vendor_samsung_chagallltetmo" remote="github" />
   <project path="vendor/samsung/klimt-common" name="AOSP-Exynos5420/android_vendor_samsung_klimt_common" remote="github" />
   <project path="vendor/samsung/klimtwifi" name="AOSP-Exynos5420/android_vendor_samsung_klimtwifi" remote="github" />
+  <project path="vendor/samsung/klimtlte" name="AOSP-Exynos5420/android_vendor_samsung_klimtlte" remote="github" />
 
   <!--Kernel-->
   <project path="kernel/samsung/chagalllte" name="AOSP-Exynos5420/android_kernel_samsung_chagalllte" remote="github" groups="kernel,chagall_klimt" />
