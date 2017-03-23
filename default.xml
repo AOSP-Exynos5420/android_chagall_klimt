@@ -23,6 +23,7 @@ FORKED REPOS
   <!--Device Trees-->
   <project path="device/samsung/chagallltetmo" name="AOSP-Exynos5420/android_device_samsung_chagallltetmo" remote="github" groups="device,chagallltetmo,broadcom_pdk" />
   <project path="device/samsung/klimtwifi" name="AOSP-Exynos5420/android_device_samsung_klimtwifi" remote="github" groups="device,klimtwifi,broadcom_pdk" />
+  <project path="device/samsung/klimtlte" name="AOSP-Exynos5420/android_device_samsung_klimtlte" remote="github" groups="device,klimtlte,broadcom_pdk" />
   <project path="device/samsung/chagall-klimt-common" name="AOSP-Exynos5420/android_device_samsung_chagall_klimt_common" remote="github" groups="device,chagall_klimt,broadcom_pdk" />
 
   <!--Vendor Trees-->
