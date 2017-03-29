@@ -21,6 +21,7 @@ FORKED REPOS
 -->
 
   <!--Device Trees-->
+  <project path="device/samsung/chagallwifi" name="AOSP-Exynos5420/android_device_samsung_chagallwifi" remote="github" groups="device,chagallwifi,broadcom_pdk" />
   <project path="device/samsung/chagallltetmo" name="AOSP-Exynos5420/android_device_samsung_chagallltetmo" remote="github" groups="device,chagallltetmo,broadcom_pdk" />
   <project path="device/samsung/klimtwifi" name="AOSP-Exynos5420/android_device_samsung_klimtwifi" remote="github" groups="device,klimtwifi,broadcom_pdk" />
   <project path="device/samsung/klimtlte" name="AOSP-Exynos5420/android_device_samsung_klimtlte" remote="github" groups="device,klimtlte,broadcom_pdk" />
@@ -28,6 +29,7 @@ FORKED REPOS
 
   <!--Vendor Trees-->
   <project path="vendor/samsung/chagall-klimt-common" name="AOSP-Exynos5420/android_vendor_samsung_chagall_klimt_common" remote="github" />
+  <project path="vendor/samsung/chagallwifi" name="AOSP-Exynos5420/android_vendor_samsung_chagallwifi" remote="github" />
   <project path="vendor/samsung/chagall-common" name="AOSP-Exynos5420/android_vendor_samsung_chagall_common" remote="github" />
   <project path="vendor/samsung/chagallltetmo" name="AOSP-Exynos5420/android_vendor_samsung_chagallltetmo" remote="github" />
   <project path="vendor/samsung/klimt-common" name="AOSP-Exynos5420/android_vendor_samsung_klimt_common" remote="github" />
